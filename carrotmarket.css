@@ -167,7 +167,7 @@ footer {
 }
 
 .media-info-msg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -176,11 +176,10 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #fe6f0f;
-  opacity: 0;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .media-info-msg {
-    opacity: 1;
+    display: none;
   }
 }
